@@ -35,13 +35,16 @@ struct wrestlerCard: View {
                     .padding()
                     Image(pic)
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 240, height: 240)
                         .clipShape(Circle())
                         .padding(20)
                     Text(name)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
+                        .shadow(radius: 5)
+                        .multilineTextAlignment(.center)
 
                 HStack{
                             Image(systemName: "star.circle.fill")
@@ -65,7 +68,9 @@ struct wrestlerCard: View {
                             .foregroundColor(Color.white)
                             .fontWeight(.bold)
                             .padding(.bottom)
+                            .multilineTextAlignment(.center)
                     }
+                    .padding(.bottom)
                 }
                 .background(bgColor)
                 .padding(20)
