@@ -30,6 +30,9 @@ struct ContentView: View {
                 }
             }
             Divider()
+            
+            //Add some more defined lines
+            
             ScrollView {
                 VStack {
                     wrestlerCard(pic: "goldberg", border: .yellow, bgColor: .mint, icons: .pink, name: "Goldberg", move: "The Spear", phrase: "Who's Next?", rank: "#10")
